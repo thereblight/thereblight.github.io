@@ -4,9 +4,10 @@ layout: default
       <div class="home">
         <div class="content-col-wrapper">
           <div class="content-col">
-            <div class="dummy">
-              <b><span class="big">Hi!</span></b> {{ site.description }}
-              <a href="mailto:{{ site.email }}"><b>{{ site.email }}</b></a>. <br><br>
+            <!-- <div class="dummy">
+              <b><span class="big">Hi!</span></b>{{ site.description }}<br>
+              <br><br>
+              <a href="mailto:{{ site.email }}"><b>{{ site.email }}</b></a> <br><br>
               ♨ <b><span class="big">Fun pict ... </span></b><br>
 
               <div class="photos">
@@ -35,24 +36,31 @@ layout: default
               <div class="dummy blogpost">
                 ✍ <b><span class="big">Writings.</span></b>
               </div>
-            </div><p></p><p></p>
-              <ul class="post-list">{% for post in paginator.posts %}
+            </div><p></p><p></p> -->
+              <ul class="post-list">{% for post in site.posts %}
                 <li class="titlepost">
                   <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
                 </li>
-                <li class="datepost">
+                <!-- <li class="datepost">
                   <span class="post-meta">{{ post.date | date: "%-d %b %Y" }}</span>
+                </li> -->
+                <li class="previewpost">
+                  <span class="post-meta">{{ post.excerpt | remove: '<p>' | remove: '</p>' }} [<a href="{{ post.url | prepend: site.baseurl }}">...</a>] </span>
                 </li>{% endfor %}
               </ul>
           </div>
-        </div>{% if paginator.previous_page %}
-          <a href="{{ paginator.previous_page_path }}">
-            <b><span class="big">Balik Lagi</span></b>
-          </a>{% else %}{% endif %}{% if paginator.next_page %}
-          <a href="{{ paginator.next_page_path }}">
-            <b><span class="big">Lanjut</span></b>
-          </a>{% else %}{% endif %}
-        <nav class="site-nav">
+          <!-- <div class="gotopage">
+          {% if paginator.previous_page %}
+            <a class="gotopage-prev" href="{{ paginator.previous_page_path }}">
+              <b>이전</b>
+            </a>{% else %}{% endif %}{% if paginator.next_page %}
+            <a class="gotopage-next" href="{{ paginator.next_page_path }}">
+              <b>다음</b>
+            </a>{% else %}{% endif %}
+          </div> -->
+        </div>
+
+        <!-- <nav class="site-nav">
         <a href="#" class="menu-icon">
           <svg viewBox="0 0 18 15">
             <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
@@ -79,5 +87,5 @@ layout: default
             </span>
           </a>
         </div>
-        </nav>
+      </nav> -->
       </div>
