@@ -307,6 +307,19 @@
     float: right;
 
 }
+.goto-home {
+    font-size: 17px;
+    font-weight: 300;
+    font-family: "Noto Sans KR";
+    margin-bottom: 20px;
+    text-align: center;
+}
+img.goto-home {
+    width: 50px;
+    height: 50px;
+    vertical-align: text-bottom;
+    margin-bottom: 0px;
+}
 .content-col-wrapper {
     font-size: $spacing-unit / 2;
     color: #6C6C6C;

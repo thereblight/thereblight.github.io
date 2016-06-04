@@ -16,7 +16,7 @@ sass:
 markdown: kramdown
 encoding: "utf-8"
 paginate: 5
-permalink: /post/:year/:month/:day/:title
+permalink: /post/:year/:title
 paginate_path: "/page/:num/"
 
 # Plugins ...
