@@ -24,7 +24,8 @@ url: "http://thereblight.github.io" # the base hostname & protocol for your site
 
 # Build settings
 markdown: kramdown
-theme: jekyll-theme-minimal
+# theme: jekyll-theme-minimal
+remote_theme: riggraz/no-style-please
 plugins:
   - jekyll-feed
 
