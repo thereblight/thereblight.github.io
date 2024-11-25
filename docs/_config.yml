@@ -33,8 +33,8 @@ plugins:
 # theme config
 theme_config:
   appearance: "auto" # can be "light", "dark" or "auto"
-  back_home_text: ".." # customize text for homepage link in post layout
-  date_format: "%Y-%m-%d" # customize how date is formatted
+  back_home_text: "작업 목록_오재환" # customize text for homepage link in post layout
+  date_format: "%Y" # customize how date is formatted
   show_description: false # show blog description in home page
   
 # Additional info for SEO
