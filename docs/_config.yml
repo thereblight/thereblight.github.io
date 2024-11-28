@@ -17,7 +17,7 @@ title: 작업 목록_오재환
 email: ilovesleepgm@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   오재환의 작업 목록과 설명
-baseurl: "/docs" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://thereblight.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 # twitter_username: jekyllrb
 # github_username:  jekyll
