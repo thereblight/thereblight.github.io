@@ -13,7 +13,7 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: 작업 목록_오재환
+title: 목록_오재환
 email: ilovesleepgm@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   오재환의 작업 목록과 설명
@@ -33,7 +33,7 @@ plugins:
 # theme config
 theme_config:
   appearance: "auto" # can be "light", "dark" or "auto"
-  back_home_text: "작업 목록_오재환" # customize text for homepage link in post layout
+  back_home_text: "목록_오재환" # customize text for homepage link in post layout
   date_format: "%Y" # customize how date is formatted
   show_description: false # show blog description in home page
   
